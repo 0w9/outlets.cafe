@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Image from 'next/image';
+import cafeGif from 'https://media.tenor.com/-HkbP1KuqbMAAAPo/pixel-art-kitchen.gif'
  
 export const metadata: Metadata = {
   title: 'The best list of cafes to cowork in.',
@@ -17,7 +19,7 @@ export default function Home() {
           </div>
         </div>
 
-        <video src="https://media.tenor.com/-HkbP1KuqbMAAAPo/pixel-art-kitchen.gif" className="mt-8" />
+        <Image src={cafeGif} alt={''} />
       </div>
     </div>
   );
