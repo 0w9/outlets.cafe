@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Image src={cafeGif} alt={''} />
+        <Image src={cafeGif} alt={'A girl vibin in a cafe. Gif.'} />
       </div>
     </div>
   );
