@@ -18,7 +18,7 @@ export default function Home() {
           </div>
         </div>
 
-        <video src={"https://outlets.cafe/cafe.mp4"} />
+        <video src={"https://outlets.cafe/cafe.mp4"} autoPlay muted/>
       </div>
     </div>
   );
