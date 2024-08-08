@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'The best list of cafes to cowork in.',
+  description: 'A big and curated list of cafes that have outlets, wifi and even more coworking perks.',
+}
+
 export default function Home() {
   return (
     <div className="flex justify-center items-center h-screen">
