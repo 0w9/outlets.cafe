@@ -27,7 +27,7 @@ export async function generateMetadata(
   const location = params.location;
   return {
     title: `Cafes with outlets in ${fullNames[location as keyof typeof fullNames]}`,
-    description: `A big and curated list of cafes in ${fullNames[location as keyof typeof fullNames]} for coworking.`,
+    description: `A big and curated list of cafes in ${fullNames[location as keyof typeof fullNames]} for coworking. Find cafes with outlets, WiFi and everything you need for a productive coworking session.`,
     // openGraph: {
     //   images: ['/some-specific-page-image.jpg', ...previousImages],
     // },
