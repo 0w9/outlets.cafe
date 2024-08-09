@@ -43,31 +43,31 @@ export default async function LocationCafesPage({ params }: Props) {
       <p className="text-lg text-gray-800 mb-8">Explore the best cafes in {params.location} for coworking.</p>
 
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
+        <table className="min-w-full divide-y divide-gray-800 bg-white">
+          <thead className="bg-gray-200">
             <tr>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Name
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Address
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Website
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 WiFi
               </th>
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
+          <tbody className="bg-gray-100 divide-y divide-gray-200">
             {cafes.map((cafe: Cafe) => (
-              <tr key={cafe.name} className="hover:bg-gray-100">
+              <tr key={cafe.name} className="hover:bg-gray-50">
                 <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm font-medium text-gray-900">{cafe.name}</div>
+                  <div className="text-sm font-medium text-gray-800">{cafe.name}</div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm text-gray-500">{cafe.address}</div>
+                  <div className="text-sm text-gray-800">{cafe.address}</div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <a href={cafe.website} target="_blank" rel="noopener noreferrer" className='underline text-blue-500 hover:text-blue-700'>
