@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image';
  
 export const metadata: Metadata = {
   title: 'The best list of cafes to cowork in.',
