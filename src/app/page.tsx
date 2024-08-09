@@ -19,7 +19,7 @@ interface SupportedCity {
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen">
       <div className="text-white text-center space-y-8">
         <div className="space-y-8">
           <h1 className="text-4xl font-bold text-black">outlets.cafe</h1>
