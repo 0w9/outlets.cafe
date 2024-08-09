@@ -35,7 +35,7 @@ export async function generateMetadata(
 }
 
 export default async function LocationCafesPage({ params }: Props) {
-  const cafes = await fetch(`http://localhost:3000/api/getCafes?location=${params.location}`).then((res) => res.json());
+  const cafes = await fetch(`https://outlets.cafe/api/getCafes?location=${params.location}`).then((res) => res.json());
 
   return (
     <div className='p-12'>
